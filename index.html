@@ -17,7 +17,6 @@
     // Styles
     ======================-->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/select2/select2.min.css">
     <link rel="stylesheet" href="fonts/icons/fontawesome/css/ionicons.css">
 </head>
     <body>
@@ -312,7 +311,7 @@
                 </div>
                 <form class="reservation__form" method="POST" action="">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-sm-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
                             <div class="reservation__group">
                                 <label for="dtp_input2">Date</label>
                                 <!-- DateTimePicker -->
@@ -323,11 +322,11 @@
                                 <input type="hidden" id="dtp_input2" value="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="reservation__group">
-                                    <label for="select-beast">Time</label>
+                                    <label for="select-time">Time</label>
                                 <!-- Time feild -->
-                                <select id="select-time" class="demo-default" type="text" name="time" value="" placeholder="Time">
+                                <select id="select-time" class="custom-select" class="custom-select d-block w-100" id="select-time" type="text" name="time" value="" placeholder="Time">
                                     <option value="6:30">6:30</option>
                                     <option value="7:00">7:00</option>
                                     <option value="7:30">7:30</option>
@@ -353,11 +352,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="reservation__group">
-                                <label for="select-beast">People</label>
+                                <label for="select-people">People</label>
                                 <!-- People feild -->
-                                <select id="select-people" class="demo-code-language" placeholder="People" type="text" name="people">
+                                <select id="select-people" class="custom-select d-block w-100" id="country" required="" name="people">
                                     <option value="1 person">1 person</option>
                                     <option value="2 people">2 people</option>
                                     <option value="3 people">3 people</option>
@@ -373,27 +372,27 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="reservation__group">
-                                <label for="select-beast">Name</label>
+                                <label for="type-name">Name</label>
                                 <!-- Name feild -->
-                                <input class="reservation__input form-control" placeholder="Name" type="text" name="name" value="">
+                                <input id="type-name" class="reservation__input form-control" placeholder="Name" type="text" name="name" value="">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="reservation__group">
-                                <label for="select-beast">Phone</label>
+                                <label for="type-phone-no">Phone</label>
                                 <!-- Phone feild -->
-                                <input class="reservation__input form-control" placeholder="Phone no." type="text" name="">
+                                <input id="type-phone-no" class="reservation__input form-control" placeholder="Phone no." type="text" name="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="reservation__group">
-                                <label for="select-beast">Email</label>
+                                <label for="type-email">Email</label>
                                 <!-- Email feild -->
-                                <input class="reservation__input form-control" placeholder="Email" type="email" name="email" value="">
+                                <input id="type-email" class="reservation__input form-control" placeholder="Email" type="email" name="email" value="">
                             </div>
                         </div>
                     </div>
@@ -429,5 +428,9 @@
             </div>
         </div><!-- [ End Footer ] -->
     </body>
+
+    <!--======================
+    // Script
+    ======================-->
     <script src="js/app.min.js"></script>
 </html>
